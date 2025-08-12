@@ -1,0 +1,40 @@
+﻿@model CoreAuth.Models.ModelClass.SubCategory
+
+@{
+    ViewData["Title"] = "Edit SubCategory";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-primary">@ViewData["Title"]</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title mb-3">Edit SubCategory Details</h5>
+
+            <form asp-action="Edit" method="post" novalidate>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label asp-for="SubCateName" class="form-label fw-semibold"></label>
+                    <input asp-for="SubCateName" class="form-control" />
+                    <span asp-validation-for="SubCateName" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label fw-semibold"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="CategoryId" class="form-label fw-semibold"></label>
+                    <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId"></select>
+                    <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+            </form>
+        </div>
+    </div>
+</div>

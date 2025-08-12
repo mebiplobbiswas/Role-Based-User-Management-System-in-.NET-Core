@@ -1,0 +1,70 @@
+﻿@model CoreAuth.Models.Category
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<div class="row">
+    <!-- Left Icon -->
+    <div class="col-md-2 text-center mt-5">
+        <i class="bi bi-folder-plus text-primary" style="font-size: 4rem;"></i>
+        <h5 class="mt-2 text-secondary">Add Category</h5>
+    </div>
+
+    <!-- Main Form Area -->
+    <div class="col-md-10">
+        <div class="container mt-4">
+            <div class="card shadow-lg border-0 rounded-3">
+                <!-- Card Header -->
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-folder-plus me-2"></i> Create New Category
+                    </h5>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body p-4">
+                    <form asp-action="Create" method="post" novalidate>
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <!-- Category Name -->
+                        <div class="mb-3">
+                            <label asp-for="CateName" class="form-label fw-semibold">
+                                <i class="bi bi-tag me-1 text-primary"></i> Category Name
+                            </label>
+                            <input asp-for="CateName" class="form-control" placeholder="Enter category name" />
+                            <span asp-validation-for="CateName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-semibold">
+                                <i class="bi bi-card-text me-1 text-primary"></i> Description
+                            </label>
+                            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter category description"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left-circle me-1"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-primary px-4">
+                                <i class="bi bi-plus-circle me-1"></i> Create
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="card-footer text-muted small">
+                    Please ensure all fields are correctly filled before submission.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">

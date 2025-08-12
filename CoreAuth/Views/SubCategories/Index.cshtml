@@ -1,0 +1,74 @@
+﻿@model IEnumerable<CoreAuth.Models.ModelClass.SubCategory>
+
+@{
+    ViewData["Title"] = "Sub Category Management";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">@ViewData["Title"]</h4>
+            <a asp-action="Create" class="btn btn-light btn-sm">
+                <i class="bi bi-plus-circle"></i> Create New
+            </a>
+        </div>
+
+
+        <div class="card-body">
+            <div class="row">
+                <!-- Left Side: Sub Category List -->
+                <div class="col-lg-12 border-end">
+                   @*  <h5 class="fw-bold mb-3 text-secondary">Sub Category List</h5> *@
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover align-middle">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.SubCateName)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                                    <th>Category</th>
+                                    <th class="text-center" style="width: 150px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.SubCateName</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.Category?.CateName</td>
+
+                                            <td class="text-center">
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm me-1">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1 text-white">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                            </td>
+
+
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted">No Sub Categories found</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Icons -->
