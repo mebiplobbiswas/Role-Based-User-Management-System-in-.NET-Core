@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\OSTAD\\CoreAuth\\CoreAuth\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\OSTAD\\CoreAuth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D9A9F2-9428-4823-80E5-C54AE6B07ED5}|CoreAuth\\CoreAuth.csproj|e:\\ostad\\coreauth\\coreauth\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D9A9F2-9428-4823-80E5-C54AE6B07ED5}|CoreAuth\\CoreAuth.csproj|solutionrelative:coreauth\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\OSTAD\\CoreAuth\\CoreAuth\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CoreAuth\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\OSTAD\\CoreAuth\\CoreAuth\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CoreAuth\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T07:40:00.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

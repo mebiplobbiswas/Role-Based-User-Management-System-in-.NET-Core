@@ -25,6 +25,12 @@ namespace CoreAuth.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult TestPage()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)

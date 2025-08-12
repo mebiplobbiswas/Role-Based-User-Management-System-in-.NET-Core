@@ -8048,11 +8048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\OSTAD\\CoreAuth\\CoreAuth\\CoreAuth\\CoreAuth.csproj",
+      "projectUniqueName": "E:\\OSTAD\\CoreAuth\\CoreAuth\\CoreAuth.csproj",
       "projectName": "CoreAuth",
-      "projectPath": "E:\\OSTAD\\CoreAuth\\CoreAuth\\CoreAuth\\CoreAuth.csproj",
+      "projectPath": "E:\\OSTAD\\CoreAuth\\CoreAuth\\CoreAuth.csproj",
       "packagesPath": "C:\\Users\\biplob\\.nuget\\packages\\",
-      "outputPath": "E:\\OSTAD\\CoreAuth\\CoreAuth\\CoreAuth\\obj\\",
+      "outputPath": "E:\\OSTAD\\CoreAuth\\CoreAuth\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
